@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230225 13:23:01.077" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="/Users/mac/Downloads/L2/tasks.robot">
+<test id="s1-t1" name="Orders robots form RobotSpareBin Industries Inc" line="26">
+<kw name="Open the robot order website">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>https://robotsparebinindustries.com/#/robot-order</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20230225 13:23:02.640" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230225 13:23:02.650" level="INFO">====== WebDriver manager ======</msg>
+<msg timestamp="20230225 13:23:03.259" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230225 13:23:09.510" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20230225 13:23:09.511" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20230225 13:23:09.511" level="INFO">Opening url 'https://robotsparebinindustries.com/#/robot-order'</msg>
+<status status="PASS" starttime="20230225 13:23:02.640" endtime="20230225 13:23:11.336"/>
+</kw>
+<kw name="Click Button When Visible" library="RPA.Browser.Selenium">
+<arg>locator=//button[@class="btn btn-dark"]</arg>
+<doc>Click button identified by ``locator``, once it becomes visible.</doc>
+<msg timestamp="20230225 13:23:11.429" level="INFO">Clicking button '//button[@class="btn btn-dark"]'.</msg>
+<status status="PASS" starttime="20230225 13:23:11.337" endtime="20230225 13:23:11.842"/>
+</kw>
+<status status="PASS" starttime="20230225 13:23:02.639" endtime="20230225 13:23:11.843"/>
+</kw>
+<kw name="Read Worksheet from Excel File">
+<kw name="Download" library="RPA.HTTP">
+<arg>${URL}</arg>
+<arg>orders.csv</arg>
+<arg>overwrite=True</arg>
+<doc>An alias for the ``HTTP Get`` keyword.</doc>
+<msg timestamp="20230225 13:23:11.844" level="INFO">Creating a new HTTP session</msg>
+<msg timestamp="20230225 13:23:11.844" level="INFO">Creating Session using : alias=rpasession_alias.httpsrobotsparebinindustries.com, url=https://robotsparebinindustries.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20230225 13:23:11.844" endtime="20230225 13:23:12.055"/>
+</kw>
+<status status="PASS" starttime="20230225 13:23:11.843" endtime="20230225 13:23:12.056"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${order}</var>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230225 13:23:12.056" level="INFO">${order} = </msg>
+<status status="PASS" starttime="20230225 13:23:12.056" endtime="20230225 13:23:12.057"/>
+</kw>
+<kw name="Fill the form using the data from the Excel file(${order})">
+<msg timestamp="20230225 13:23:12.061" level="FAIL">No keyword with name 'Fill the form using the data from the Excel file(${order})' found. Did you mean:
+    Fill The Form Using The Data From The Excel File</msg>
+<status status="FAIL" starttime="20230225 13:23:12.060" endtime="20230225 13:23:12.061"/>
+</kw>
+<kw name="Embed the screenshot to the PDF file(${order})">
+<status status="NOT RUN" starttime="20230225 13:23:12.065" endtime="20230225 13:23:12.066"/>
+</kw>
+<kw name="Create a ZIP archive of the PDF receipts(${order})">
+<status status="NOT RUN" starttime="20230225 13:23:12.069" endtime="20230225 13:23:12.069"/>
+</kw>
+<kw name="Complete all the orders(${order})">
+<status status="NOT RUN" starttime="20230225 13:23:12.073" endtime="20230225 13:23:12.073"/>
+</kw>
+<status status="FAIL" starttime="20230225 13:23:02.638" endtime="20230225 13:23:12.074">No keyword with name 'Fill the form using the data from the Excel file(${order})' found. Did you mean:
+    Fill The Form Using The Data From The Excel File</status>
+</test>
+<doc>Orders robots from RobotSpareBin Industries Inc.</doc>
+<status status="FAIL" starttime="20230225 13:23:01.081" endtime="20230225 13:23:12.075"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230225 13:23:02.634" level="WARN">RPA.Word.Application library works only on Windows platform</msg>
+<msg timestamp="20230225 13:23:02.634" level="WARN">Word application library requires Windows dependencies to work.</msg>
+<msg timestamp="20230225 13:23:02.637" level="ERROR">Error in file '/Users/mac/Downloads/L2/tasks.robot' on line 18: Error in file '/Users/mac/Downloads/Corp/tasks.robot' on line 12: Resource file with 'Tasks' section is invalid.</msg>
+</errors>
+</robot>
