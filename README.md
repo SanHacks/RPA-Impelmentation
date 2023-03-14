@@ -16,4 +16,4 @@
 - You can configure dependencies in `conda.yaml`.
 
 ## Objectives of the Robot Framework Project 
-Only the robot is allowed to get the orders file. You may not save the file manually on your computer.
+- [x] Only the robot is allowed to get the orders file. You may not save the file manually on your computer.
