@@ -16,4 +16,11 @@
 - You can configure dependencies in `conda.yaml`.
 
 ## Objectives of the Robot Framework Project 
-- [x] Only the robot is allowed to get the orders file. You may not save the file manually on your computer.
+- [x] Only the robot is allowed to get the orders file. Without human intervention.
+- [x] The robot saves each order HTML receipt as a PDF file. and saves it to the `output` folder.
+- [x] The robot saves a screenshot of each of the ordered robots.
+- [x] The robot embedds the screenshot of the robot to the PDF receipt.
+- [x] The robot creates a ZIP archive of the PDF receipts (one zip archive that contains all the PDF files). Store the archive in the output directory.
+- [x] The robot completes all the orders even when there are technical failures with the robot order website.
+<!-- - [x] The robot is available in public GitHub repository.
+- [x] The robot can be downloaded from the public GitHub repository and run it without manual setup. -->
