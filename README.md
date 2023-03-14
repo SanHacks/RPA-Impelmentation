@@ -1,4 +1,5 @@
-# Template: Standard Robot Framework
+# Automated Order Submission and Storage
+![image](https://user-images.githubusercontent.com/13138647/225052458-afa87a92-80ef-4d0b-abaf-6b1ead961fd6.png)
 
 This is the simplest template to start from.
 
