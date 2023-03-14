@@ -1,4 +1,13 @@
+
+
 # Automated Order Submission and Storage
+
+
+## Flow Explorer
+
+<img width="1434" alt="Screenshot 2023-03-14 at 17 47 14" src="https://user-images.githubusercontent.com/13138647/225057812-d308d5c2-5a7a-46aa-9596-156356560581.png">
+
+### Bot At Work
 ![image](https://user-images.githubusercontent.com/13138647/225052458-afa87a92-80ef-4d0b-abaf-6b1ead961fd6.png)
 
 ## Running the Robot Locally
@@ -25,6 +34,4 @@
 <!-- - [x] The robot is available in public GitHub repository.
 - [x] The robot can be downloaded from the public GitHub repository and run it without manual setup. -->
 
-## Flow Explorer
 
-<img width="1434" alt="Screenshot 2023-03-14 at 17 47 14" src="https://user-images.githubusercontent.com/13138647/225057812-d308d5c2-5a7a-46aa-9596-156356560581.png">
